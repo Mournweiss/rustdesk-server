@@ -38,7 +38,12 @@ RustDesk is an open-source remote desktop solution. This project packages the of
 2. **Configure environment variables:**
 
     - Copy `.env.example` to `.env` and adjust as needed.
-    - Set the `HBBS_RELAY_ADDR` variable with your server's public IP address or domain name.
+
+        ```bash
+        cp .env.example .env
+        ```
+
+    - Set the `HBBS_RELAY_ADDR` variable with your server's public IP address or domain name (without port).
 
 3. **Start the services:**
 
