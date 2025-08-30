@@ -1,0 +1,6 @@
+FROM docker.io/rustdesk/rustdesk-server:latest
+
+# Expose default RustDesk broker ports
+EXPOSE 21115 21116 21118
+
+ENTRYPOINT ["hbbs"]

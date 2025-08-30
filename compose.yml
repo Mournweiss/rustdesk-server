@@ -1,0 +1,41 @@
+services:
+    hbbs:
+        build:
+            context: ./services/hbbs
+        image: rustdesk-hbbs:latest
+        container_name: rustdesk-hbbs
+        restart: unless-stopped
+        working_dir: /data
+        ports:
+            - "21115:21115"
+            - "21116:21116"
+            - "21116:21116/udp"
+            - "21118:21118"
+        env_file:
+            - .env
+        volumes:
+            - ./data:/data
+        command: ["-r", "${HBBS_RELAY_ADDR}"]
+        networks:
+            - rustdesk-net
+
+    hbbr:
+        build:
+            context: ./services/hbbr
+        image: rustdesk-hbbr:latest
+        container_name: rustdesk-hbbr
+        restart: unless-stopped
+        working_dir: /data
+        ports:
+            - "21117:21117"
+            - "21119:21119"
+        env_file:
+            - .env
+        volumes:
+            - ./data:/data
+        networks:
+            - rustdesk-net
+
+networks:
+    rustdesk-net:
+        driver: bridge

@@ -1,0 +1,6 @@
+FROM docker.io/rustdesk/rustdesk-server:latest
+
+# Expose default RustDesk relay ports
+EXPOSE 21117 21119
+
+ENTRYPOINT ["hbbr"]
