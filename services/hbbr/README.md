@@ -19,7 +19,7 @@ This service provides a containerized RustDesk Relay Server (hbbr), designed to 
 
 ## Usage
 
-This container is intended to be run as part of a Compose setup. Example section in [`compose.yml`](../compose.yml):
+This container is intended to be run as part of a Compose setup. Example section in [`compose.yml`](../../compose.yml):
 
 ```yaml
 hbbr:

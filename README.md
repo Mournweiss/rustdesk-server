@@ -51,12 +51,12 @@ RustDesk is an open-source remote desktop solution. This project packages the of
 
 ## Directory Structure
 
--   `services/` — Contains build files and documentation for each service:
+-   [`services/`](./services/) — Contains build files and documentation for each service:
 
-    -   `hbbs/` — Broker server
-    -   `hbbr/` — Relay server
+    -   [`hbbs/`](./services/hbbr/) — Relay server
+    -   [`hbbr/`](./services/hbbs/) — Broker server
 
--   `compose.yml` — Compose configuration
+-   [`compose.yml`](./compose.yml) — Compose configuration
 
 ## License
 
