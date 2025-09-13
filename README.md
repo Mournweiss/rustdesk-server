@@ -52,7 +52,7 @@ RustDesk is an open-source remote desktop solution. This project packages the of
     ```
 
 4. **Access:**
-    - Clients can now connect to your server using the public IP/domain and the exposed ports.
+    - Clients can now connect to your server using the public IP/domain and the exposed ports with public key in `data/id_ed25519.pub`.
 
 ## Directory Structure
 
