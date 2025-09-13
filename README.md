@@ -48,7 +48,7 @@ RustDesk is an open-source remote desktop solution. This project packages the of
 3. **Start the services:**
 
     ```bash
-    podman-compose up -d
+    podman-compose up --build -d
     ```
 
 4. **Access:**

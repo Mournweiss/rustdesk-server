@@ -53,17 +53,3 @@ hbbs:
 ## Environment Variables
 
 Use a `.env` file to provide required environment variables, such as `HBBS_RELAY_ADDR` for relay server address.
-
-## Manual Usage
-
-### Build
-
-```bash
-podman build -t rustdesk-hbbs:latest .
-```
-
-### Run
-
-```bash
-podman run -d --name rustdesk-hbbs -p 21115:21115 -p 21116:21116 -p 21116:21116/udp -p 21118:21118 rustdesk-hbbs:latest
-```

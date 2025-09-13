@@ -23,13 +23,3 @@ This directory contains the service definitions and build instructions for the R
 ## Usage
 
 These services are intended to be used with orchestration tool. See the root [`compose.yml`](../compose.yml) for an example of how to orchestrate both services together.
-
-## Building Services
-
-To build a service manually, navigate to its directory and run:
-
-```bash
-podman build -t rustdesk-hbbs:latest ./hbbs
-
-podman build -t rustdesk-hbbr:latest ./hbbr
-```

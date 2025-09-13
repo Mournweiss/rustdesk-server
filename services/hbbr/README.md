@@ -48,17 +48,3 @@ hbbr:
 ## Environment Variables
 
 Use a `.env` file to provide any required environment variables.
-
-## Manual Usage
-
-### Build
-
-```bash
-podman build -t rustdesk-hbbr:latest .
-```
-
-### Run
-
-```bash
-podman run -d --name rustdesk-hbbr -p 21117:21117 -p 21119:21119 rustdesk-hbbr:latest
-```
